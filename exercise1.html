@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+  </head>
+  <body>
+    <!--<div class="d-fluid-flex justify-content-between bd-highlight">-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbarBG">
+         <!-- Collapsed menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Image and text -->
+        <a class="navbar-brand" href="#">
+        <img src="icon_left_bar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        ToDo Manager
+        </a>
+        <!-- Search box -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <form class="form-inline m-lg-auto my-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <!--Right logo-->
+        <div class="ml-3 mt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+        </div>
+    </nav>
+    <!-- Body of the page -->
+    <div class="container-fluid">
+        <div class="row" style="min-height:100vh;">
+            <!-- Left sidebar -->
+            <div class="col-4 leftsidebarBG d-none d-md-block py-2 px-3">
+                <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action activesidebarsection" aria-current="true">
+                    All
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action transparentBG">Important</button>
+                    <button type="button" class="list-group-item list-group-item-action transparentBG">Today</button>
+                    <button type="button" class="list-group-item list-group-item-action transparentBG">Next 7 Days</button>
+                    <button type="button" class="list-group-item list-group-item-action transparentBG">Private</button>
+                </div>
+            </div>
+            <!-- Right coloumn: main content -->
+            <div class="col maincontentBG py-2 px-3">
+                <h1 class="display-5">All</h1>
+                <ul class="list-group list-group-flush">
+                    <!--First row-->
+                    <li class="list-group-item transparentBG">
+                    <div class="d-flex justify-content-between">
+                        <span class="p-0">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">Complete Lab 2
+                        </span>
+                        <span class="p-0">
+                            Monday 22 March 2021 at 14:30
+                        </span>
+                    </div>
+                    </li>
+                    <!--Second row-->
+                    <li class="list-group-item transparentBG">
+                        <div class="d-flex justify-content-between">
+                            <span class="p-0">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">Buy some groceries
+                            </span>
+                            <span class="p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                            </span>
+                            <span class="p-0">
+                                Today at 14:00
+                            </span>
+                        </div>
+                    </li>
+                    <!--Third row-->
+                    <li class="list-group-item transparentBG">
+                        <div class="d-flex justify-content-between">
+                            <span class="p-0">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1"><span class="read">Read a good book!</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            <!-- Moving button right corner -->
+            <button type="button" class="btn btn-lg rounded-circle mybutton">+</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>

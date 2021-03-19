@@ -1,0 +1,52 @@
+.navbarBG {
+    background-color: #b28704;
+}
+
+.leftsidebarBG {
+    background-color: #ffc107;
+}
+
+.maincontentBG {
+    background-color: #ffdd72;
+}
+
+.activelist {
+    background-color: black;
+    color: red;
+}
+
+.read {
+        color: red;
+        font-weight: bold;
+}
+
+.transparentBG {
+    background-color: transparent;
+}
+.transparentBG:hover {
+    background-color: #ffdd72;
+    ;
+}
+
+.textBG {
+    background-color: #fb8c00;
+}
+
+.activesidebarsection {
+    background-color: #b28704;
+}
+
+.activesidebarsection:hover{
+    background-color: #b28704;
+}
+.mybutton {
+    background-color: #fb8c00;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+
+    position:fixed;
+    bottom:1.5rem;
+    right:1.5rem;
+  }
